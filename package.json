@@ -1,0 +1,15 @@
+{
+  "name": "ts-types-analyzer",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/hunnble/ts-types-analyzer.git",
+  "author": "hunnble <hante_hunter@163.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "typescript": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.3"
+  }
+}
