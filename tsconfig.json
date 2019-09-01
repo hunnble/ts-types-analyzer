@@ -2,9 +2,11 @@
   "compileOptions": {
     "typeRoots": [
       "node_modules/@types",
+      "node_modules/typescript/lib"
     ],
     "types": [
-      "node"
+      "node",
+      "typescript"
     ]
   },
   "exclude": [

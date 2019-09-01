@@ -6,6 +6,9 @@
   "author": "hunnble <hante_hunter@163.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "dev": "ts-node index.ts"
+  },
   "dependencies": {
     "typescript": "^3.6.2"
   },
