@@ -1,1 +1,1 @@
-anyP: any = 1
+const anyP: any = 1
