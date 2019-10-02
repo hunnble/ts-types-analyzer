@@ -9,10 +9,19 @@ interface Result {
   [key: string]: any
 }
 
-export function analyze(filenames: string[]) {
+interface Options {
+  target?: ts.ScriptTarget,
+  module?: ts.ModuleKind,
+}
+
+export function analyze(filenames: string[], options: Options = {}) {
+  const {
+    target = ts.ScriptTarget.ES2019,
+    module = ts.ModuleKind.CommonJS
+  } = options
   const program = ts.createProgram(filenames, {
-    target: ts.ScriptTarget.ES2019,
-    module: ts.ModuleKind.CommonJS,
+    target,
+    module,
   })
   const checker = program.getTypeChecker()
   const tsFiles = program.getSourceFiles().filter(file => !file.isDeclarationFile)
